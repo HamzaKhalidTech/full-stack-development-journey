@@ -1,0 +1,27 @@
+h1 {
+  color: #0000ff;
+}
+
+p {
+  color: rgb(0, 255, 0);
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box {
+  color: hsl(0, 50%, 60%);
+}
+
+/*
+Lesson 2 — CSS Colors
+
+| Method     | Example           | Importance |
+| ---------- | ----------------- | ---------- |
+| Color name | `red`             | ⭐          |
+| HEX        | `#ff0000`         | ⭐⭐⭐        |
+| RGB        | `rgb(255,0,0)`    | ⭐⭐⭐        |
+| RGBA       | `rgba(0,0,0,.5)`  | ⭐⭐         |
+| HSL        | `hsl(0,100%,50%)` | ⭐⭐         |
+*/

@@ -1,0 +1,35 @@
+.hero {
+  height: 500px;
+  background-color: darkcyan;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTKCIK0ahqDLACujGSiH9nBieyoNffeFoFg9WevMuf2w&s=10");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card {
+  background-color: lightgoldenrodyellow;
+}
+
+.gradient-box {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTKCIK0ahqDLACujGSiH9nBieyoNffeFoFg9WevMuf2w&s=10");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/*
+Lesson 6 — CSS Backgrounds
+
+background-color
+background-image
+background-repeat
+background-position
+background-size
+background-attachment
+background shorthand
+gradients — basic introduction
+
+*/

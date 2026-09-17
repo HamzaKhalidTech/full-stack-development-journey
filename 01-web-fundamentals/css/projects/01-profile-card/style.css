@@ -1,0 +1,54 @@
+.profile-card {
+  width: 350px;
+  padding: 40px;
+  border: 2px solid #ddd;
+  border-radius: 16px;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  border: 2px solid #333;
+  border-radius: 50%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: blue;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: blue;
+  margin: 5px;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: cadetblue;
+}
+
+.skills span {
+  background-color: chocolate;
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 20px;
+}
+
+button {
+  background-color: rgb(173, 66, 66);
+  color: white;
+  border: 1px solid blue;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px;
+  font-size: 1em;
+}

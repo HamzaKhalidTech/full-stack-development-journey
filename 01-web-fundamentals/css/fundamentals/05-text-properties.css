@@ -1,0 +1,70 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px gray;
+}
+
+.intro {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.product-title {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*
+Lesson 5 — Text Properties
+
+text-align
+text-decoration
+text-indent
+text-shadow
+word-spacing
+white-space
+overflow-wrap
+text-overflow
+-----
+text-align
+    ↓
+Text kahan aligned hai?
+
+text-decoration
+    ↓
+Text ke saath line?
+
+text-indent
+    ↓
+First line andar?
+
+text-shadow
+    ↓
+Text ke peeche shadow?
+
+word-spacing
+    ↓
+Words ke darmiyan distance?
+
+white-space
+    ↓
+Text wrapping ka behavior?
+
+overflow-wrap
+    ↓
+Long word container se bahar ja raha?
+
+text-overflow
+    ↓
+Overflow text ko kaise represent karna?
+
+*/
