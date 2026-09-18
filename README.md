@@ -39,8 +39,16 @@ full-stack-development-journey/
 │
 ├── 01-web-fundamentals/
 │   ├── html/
-│   ├── css/
-│   └── projects/
+│   │   ├── fundamentals/
+│   │   └── projects/
+│   │
+│   └── css/
+│       ├── fundamentals/
+│       ├── selectors/
+│       ├── box-model/
+│       ├── layout/
+│       ├── advanced/
+│       └── projects/
 │
 ├── 02-javascript/
 │   ├── fundamentals/
@@ -49,55 +57,42 @@ full-stack-development-journey/
 │   └── projects/
 │
 ├── 03-git-github/
-│
 ├── 04-react/
-│   ├── fundamentals/
-│   ├── hooks/
-│   ├── routing/
-│   └── projects/
-│
 ├── 05-nextjs/
-│
 ├── 06-backend/
-│   ├── nodejs/
-│   ├── express/
-│   ├── rest-api/
-│   └── authentication/
-│
 ├── 07-databases/
-│   ├── mongodb/
-│   └── postgresql/
-│
 ├── 08-full-stack-projects/
-│   ├── project-01/
-│   ├── project-02/
-│   └── project-03/
-│
 ├── 09-testing/
-│
 ├── 10-deployment/
-│
 └── 11-real-world-development/
-    ├── api-integration/
-    ├── security/
-    ├── performance/
-    └── documentation/
 ```
 
 ## 🛣️ Roadmap
 
 ### Phase 1 — Web Fundamentals
 
+#### HTML
 - HTML structure
 - Semantic HTML
 - Forms and validation
 - Accessibility basics
-- CSS selectors and cascade
+- Practical HTML projects
+
+#### CSS
+- CSS syntax
+- Colors
+- Units
+- Typography and fonts
+- Text properties
+- Backgrounds
+- Borders
+- Selectors
 - Box model
 - Flexbox
 - CSS Grid
 - Responsive design
-- Build responsive landing pages
+- Advanced CSS
+- Responsive UI projects
 
 **Target:** Build clean, responsive websites without relying on frameworks.
 
@@ -148,8 +143,6 @@ full-stack-development-journey/
 - Reusable components
 - Production-style React projects
 
-**Target:** Build maintainable frontend applications with React.
-
 ### Phase 5 — Next.js
 
 - App Router
@@ -160,8 +153,6 @@ full-stack-development-journey/
 - Authentication
 - SEO
 - Deployment
-
-**Target:** Build modern production-oriented React applications with Next.js.
 
 ### Phase 6 — Backend Development
 
@@ -176,12 +167,9 @@ full-stack-development-journey/
 - Cookies and tokens
 - Security fundamentals
 
-**Target:** Design and build reliable backend services and APIs.
-
 ### Phase 7 — Databases
 
 #### MongoDB
-
 - Documents and collections
 - Data modeling
 - CRUD
@@ -189,7 +177,6 @@ full-stack-development-journey/
 - Indexing
 
 #### PostgreSQL
-
 - SQL fundamentals
 - CRUD
 - Relationships
@@ -197,8 +184,6 @@ full-stack-development-journey/
 - Indexes
 - Transactions
 - Data modeling
-
-**Target:** Understand how application data is designed, stored, queried, and protected.
 
 ### Phase 8 — Full-Stack Projects
 
@@ -258,7 +243,13 @@ Every serious project should include:
 
 | Area | Status |
 |---|---|
-| HTML/CSS | 🔄 In Progress |
+| HTML Fundamentals | ✅ Completed |
+| CSS Fundamentals | ✅ Completed |
+| CSS Selectors | 🔄 In Progress |
+| CSS Box Model | ⏳ Upcoming |
+| CSS Layout | ⏳ Upcoming |
+| Responsive Design | ⏳ Upcoming |
+| Advanced CSS | ⏳ Upcoming |
 | JavaScript | ⏳ Upcoming |
 | Git/GitHub | ⏳ Upcoming |
 | React | ⏳ Upcoming |
@@ -269,6 +260,46 @@ Every serious project should include:
 | Testing | ⏳ Upcoming |
 | Deployment | ⏳ Upcoming |
 | Full-Stack Projects | ⏳ Upcoming |
+
+## 📚 Current CSS Progress
+
+### Fundamentals — Completed
+
+- [x] CSS Syntax
+- [x] Colors
+- [x] Units
+- [x] Typography & Fonts
+- [x] Text Properties
+- [x] Backgrounds
+- [x] Borders
+- [x] Developer Profile Card project
+
+### Selectors — In Progress
+
+- [x] Basic Selectors
+- [ ] Combinators
+- [ ] Pseudo-classes
+- [ ] Pseudo-elements
+- [ ] Specificity and Cascade
+
+## 🛠️ Current Project
+
+### Developer Profile Card
+
+A small HTML + CSS project built to apply the CSS fundamentals learned so far.
+
+**Concepts practiced:**
+- CSS colors
+- Relative and absolute units
+- Typography
+- Text properties
+- Backgrounds
+- Borders
+- Border radius
+- Basic selectors
+- Classes and IDs
+- Grouping selectors
+- Universal selector
 
 ## 📐 Project Standards
 
@@ -298,9 +329,11 @@ For important learning milestones, I will document:
 
 ## 🚀 Current Focus
 
-**Phase 1 — Web Fundamentals**
+**Phase 1 — Web Fundamentals → CSS Selectors**
 
-The immediate goal is to strengthen HTML and CSS fundamentals before moving deeper into JavaScript.
+Current milestone: **CSS Fundamentals completed and Basic Selectors completed.**
+
+The next focus is CSS combinators, followed by pseudo-classes, pseudo-elements, specificity, box model, layout, and responsive design.
 
 ## 🔥 My Rule
 
