@@ -8,22 +8,6 @@ This repository documents what I learn, what I build, the problems I solve, and 
 
 Build strong full-stack development skills and become capable of building, deploying, maintaining, and improving real-world web applications.
 
-### Core Stack
-
-- HTML5 & CSS3
-- JavaScript
-- TypeScript
-- Git & GitHub
-- React
-- Next.js
-- Node.js & Express
-- REST APIs
-- MongoDB & PostgreSQL
-- Authentication & Authorization
-- Testing
-- Deployment & DevOps fundamentals
-- Security, performance, architecture, and documentation
-
 ## 🧠 Learning Philosophy
 
 > **Learn → Practice → Build → Document → Review → Improve**
@@ -51,11 +35,6 @@ full-stack-development-journey/
 │       └── projects/
 │
 ├── 02-javascript/
-│   ├── fundamentals/
-│   ├── dom/
-│   ├── async-js/
-│   └── projects/
-│
 ├── 03-git-github/
 ├── 04-react/
 ├── 05-nextjs/
@@ -88,16 +67,19 @@ full-stack-development-journey/
 - Borders
 - Selectors
 - Box model
+- Display
+- Positioning
+- Z-index
 - Flexbox
 - CSS Grid
 - Responsive design
+- Media queries
 - Advanced CSS
 - Responsive UI projects
 
 **Target:** Build clean, responsive websites without relying on frameworks.
 
 ### Phase 2 — JavaScript
-
 - Variables and data types
 - Operators and conditionals
 - Loops
@@ -113,23 +95,16 @@ full-stack-development-journey/
 - Error handling
 - Practical JavaScript projects
 
-**Target:** Build interactive web applications using vanilla JavaScript.
-
 ### Phase 3 — Git & GitHub
-
 - Git fundamentals
 - Commits and branches
 - Merge and conflict resolution
 - Pull requests
 - Issues
 - README documentation
-- GitHub workflow
 - Professional repository management
 
-**Target:** Work with Git and GitHub like a professional developer.
-
 ### Phase 4 — React
-
 - Components
 - Props
 - State
@@ -141,10 +116,9 @@ full-stack-development-journey/
 - React Router
 - API integration
 - Reusable components
-- Production-style React projects
+- Production-style projects
 
 ### Phase 5 — Next.js
-
 - App Router
 - Pages and layouts
 - Server and Client Components
@@ -155,7 +129,6 @@ full-stack-development-journey/
 - Deployment
 
 ### Phase 6 — Backend Development
-
 - Node.js
 - Express
 - REST APIs
@@ -198,7 +171,6 @@ Planned projects:
 7. Production-style capstone project
 
 Every serious project should include:
-
 - README
 - Features
 - Tech stack
@@ -210,7 +182,6 @@ Every serious project should include:
 - Lessons learned
 
 ### Phase 9 — Testing
-
 - Unit testing
 - Integration testing
 - API testing
@@ -218,7 +189,6 @@ Every serious project should include:
 - Debugging workflows
 
 ### Phase 10 — Deployment
-
 - Environment configuration
 - Production builds
 - Hosting
@@ -228,7 +198,6 @@ Every serious project should include:
 - Basic DevOps practices
 
 ### Phase 11 — Real-World Development
-
 - API integration
 - Authentication and security
 - Performance optimization
@@ -245,13 +214,13 @@ Every serious project should include:
 |---|---|
 | HTML Fundamentals | ✅ Completed |
 | CSS Fundamentals | ✅ Completed |
-| CSS Selectors | 🔄 In Progress |
-| CSS Box Model | ⏳ Upcoming |
-| CSS Layout | ⏳ Upcoming |
-| Responsive Design | ⏳ Upcoming |
-| Advanced CSS | ⏳ Upcoming |
+| CSS Selectors | ✅ Completed |
+| CSS Box Model | ✅ Completed |
+| CSS Layout | ✅ Completed |
+| Responsive Design | ✅ Completed |
+| CSS Advanced | ⏳ Upcoming |
 | JavaScript | ⏳ Upcoming |
-| Git/GitHub | ⏳ Upcoming |
+| Git/GitHub | 🔄 Repository workflow in progress |
 | React | ⏳ Upcoming |
 | Next.js | ⏳ Upcoming |
 | Node/Express | ⏳ Upcoming |
@@ -261,10 +230,9 @@ Every serious project should include:
 | Deployment | ⏳ Upcoming |
 | Full-Stack Projects | ⏳ Upcoming |
 
-## 📚 Current CSS Progress
+## 📚 CSS Progress
 
 ### Fundamentals — Completed
-
 - [x] CSS Syntax
 - [x] Colors
 - [x] Units
@@ -272,34 +240,61 @@ Every serious project should include:
 - [x] Text Properties
 - [x] Backgrounds
 - [x] Borders
-- [x] Developer Profile Card project
 
-### Selectors — In Progress
-
+### Selectors — Completed
 - [x] Basic Selectors
-- [ ] Combinators
-- [ ] Pseudo-classes
-- [ ] Pseudo-elements
-- [ ] Specificity and Cascade
+- [x] Combinators
+- [x] Pseudo-classes
+- [x] Pseudo-elements
+- [x] Specificity and Cascade
 
-## 🛠️ Current Project
+### Box Model — Completed
+- [x] Width & Height
+- [x] Margin
+- [x] Padding
+- [x] Border
+- [x] Box Sizing
+- [x] Overflow
 
-### Developer Profile Card
+### Layout — Completed
+- [x] Display
+- [x] Position
+- [x] Z-index
+- [x] Flexbox
+- [x] CSS Grid
+- [x] Responsive Design
+- [x] Media Queries
 
-A small HTML + CSS project built to apply the CSS fundamentals learned so far.
+## 🛠️ CSS Projects
 
-**Concepts practiced:**
-- CSS colors
-- Relative and absolute units
-- Typography
-- Text properties
-- Backgrounds
-- Borders
-- Border radius
-- Basic selectors
-- Classes and IDs
-- Grouping selectors
-- Universal selector
+### 01 — Developer Profile Card
+Completed project used to apply the early CSS fundamentals.
+
+### 02 — Landing Page
+Currently in progress.
+
+Current work:
+- HTML structure
+- CSS reset and base styles
+- Responsive-ready layout foundation
+- Navigation bar
+
+Next:
+- Hero section
+- Services section
+- About section
+- Contact section
+- Footer
+- Responsive refinement
+
+### 03 — Responsive Navbar
+Planned.
+
+### 04 — Pricing Section
+Planned.
+
+### 05 — Responsive Website
+Planned.
 
 ## 📐 Project Standards
 
@@ -308,7 +303,7 @@ For every meaningful project, I will aim for:
 - Clean and readable code
 - Meaningful naming
 - Responsive UI
-- Reusable components
+- Reusable code
 - Proper error handling
 - Secure handling of secrets
 - Environment variables
@@ -329,11 +324,13 @@ For important learning milestones, I will document:
 
 ## 🚀 Current Focus
 
-**Phase 1 — Web Fundamentals → CSS Selectors**
+**Phase 1 — Web Fundamentals → CSS Projects**
 
-Current milestone: **CSS Fundamentals completed and Basic Selectors completed.**
+Current milestone: **CSS fundamentals, selectors, box model, layout, and responsive design completed.**
 
-The next focus is CSS combinators, followed by pseudo-classes, pseudo-elements, specificity, box model, layout, and responsive design.
+Current project: **02 — Landing Page**
+
+The landing page is being built step-by-step instead of being copied as one complete template.
 
 ## 🔥 My Rule
 
