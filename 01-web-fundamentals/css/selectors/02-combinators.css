@@ -1,0 +1,43 @@
+.profile p {
+  color: gray;
+}
+
+.profile > p {
+  color: blue;
+}
+
+h1 + p {
+   color: green;
+}
+
+h1 ~p {
+  color: purple;
+}
+
+
+
+/*
+Phase 2 — Lesson 2: Combinators
+| Combinator       | Symbol | Meaning               |
+| ---------------- | ------ | --------------------- |
+| Descendant       | ` `    | andar kahin bhi       |
+| Child            | `>`    | direct child          |
+| Adjacent Sibling | `+`    | bilkul next sibling   |
+| General Sibling  | `~`    | uske baad ke siblings |
+.card p
+   ↓
+andar kahin bhi
+
+.card > p
+   ↓
+direct andar
+
+h2 + p
+   ↓
+sirf next wala
+
+h2 ~ p
+   ↓
+baad ke saare siblings
+
+*/

@@ -1,0 +1,97 @@
+a:hover {
+    color: red;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.menu a:first-child {
+    font-weight: bold;
+}
+
+.menu a:last-child {
+    color: green;
+}
+
+.menu a:nth-child(2) {
+    color: purple;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+input:checked {
+    accent-color: green;
+}
+
+/*
+Phase 2 — Lesson 3: Pseudo-Classes
+| Pseudo-class   | Meaning                  |
+| -------------- | ------------------------ |
+| `:hover`       | mouse element ke upar    |
+| `:focus`       | element focused/selected |
+| `:active`      | element press ho raha    |
+| `:first-child` | first child              |
+| `:last-child`  | last child               |
+| `:nth-child()` | specific child           |
+
+Easy memory:
+:hover
+   ↓
+Mouse
+
+:focus
+   ↓
+Input selected
+
+:active
+   ↓
+Press
+
+:first-child
+   ↓
+First
+
+:last-child
+   ↓
+Last
+
+:nth-child()
+   ↓
+Specific position
+
+Phase 2 — Lesson 3B: Advanced Pseudo-Classes
+:not()
+:disabled
+:checked
+:required
+
+:not()
+   ↓
+isko chhor do
+
+:disabled
+   ↓
+disabled element
+
+:checked
+   ↓
+checkbox/radio selected
+
+:required
+   ↓
+mandatory form field
+-------------------------------
+
+Phase 2 — Lesson 3C
+:first-of-type, :last-of-type, :nth-of-type()
+
+
+*/

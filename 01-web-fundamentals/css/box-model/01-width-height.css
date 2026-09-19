@@ -1,0 +1,47 @@
+.parent {
+   width: 600px;
+   height: 300px;
+}
+
+.child {
+   width: 50%;
+   height: 30%;
+}
+
+.container {
+   width: 100%;
+   max-width: 1200px;
+}
+
+.hero {
+   min-height: 500px;
+}
+
+
+/*
+Lesson 1: Width & Height
+width
+   ↓
+normal size
+
+min-width
+   ↓
+isse chhota nahi
+
+max-width
+   ↓
+isse bara nahi
+
+
+height
+   ↓
+normal size
+
+min-height
+   ↓
+isse chhota nahi
+
+max-height
+   ↓
+isse bara nahi
+*/

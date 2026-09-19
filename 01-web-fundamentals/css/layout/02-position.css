@@ -1,0 +1,55 @@
+
+.parent {
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.relative-box {
+    background-color: lightblue;
+    position: relative;
+top: 20px;
+left: 30px;
+}
+
+.absolute-box {
+    background-color: lightcoral;
+    position: absolute;
+top: 20px;
+right: 20px;
+}
+
+.fixed-button {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+/* Lesson 2: position
+
+static
+relative
+absolute
+fixed
+sticky
+
+| Position   | Normal flow? | Common use                       |
+| ---------- | ------------ | -------------------------------- |
+| `static`   | ✅            | Default                          |
+| `relative` | ✅            | Reference point / small movement |
+| `absolute` | ❌            | Badge, overlay, icon             |
+| `fixed`    | ❌            | Floating buttons                 |
+| `sticky`   | ✅            | Sticky navbar                    |
+
+
+*/

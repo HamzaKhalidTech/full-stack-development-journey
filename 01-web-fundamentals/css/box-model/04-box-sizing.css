@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+/*
+content-box
+────────────────────────
+width = CONTENT only
+
+border-box
+────────────────────────
+width = CONTENT + PADDING + BORDER
+
+Yaad rakho:
+
+content-box → width content ki
+
+border-box → width complete box ki
+
+*/

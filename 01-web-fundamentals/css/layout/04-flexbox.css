@@ -1,0 +1,63 @@
+/* Flex Container */
+.container {
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+
+    display: flex;
+
+    /* Main Axis */
+    flex-direction: row;
+
+    /* Main Axis Alignment */
+    justify-content: center;
+
+    /* Cross Axis Alignment */
+    align-items: center;
+}
+
+/* Flex Items */
+.box {
+    width: 100px;
+    height: 100px;
+
+    background-color: lightblue;
+    border: 1px solid black;
+
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*
+justify-content:-
+flex-start
+center
+flex-end
+space-between
+space-around
+space-evenly
+
+-------------
+align-items :-
+stretch
+flex-start
+center
+flex-end
+------------------
+flex-wrap:- gap
+flex-grow, flex-shrink, flex-basis, flex align-content
+
+
+
+display: flex
+      ↓
+flex-direction
+      ↓
+Main Axis
+      ↓
+justify-content
+
+Cross Axis
+      ↓
+align-items
+*/

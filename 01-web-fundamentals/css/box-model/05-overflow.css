@@ -1,0 +1,45 @@
+/* Common styling for all boxes */
+.box {
+    width: 250px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+/* 1. Content bahar bhi visible rahega */
+.visible {
+    overflow: visible;
+}
+
+/* 2. Extra content hide ho jayega */
+.hidden {
+    overflow: hidden;
+}
+
+/* 3. Scrollbar available hogi */
+.scroll {
+    overflow: scroll;
+}
+
+/* 4. Zarurat hone par scrollbar show hogi */
+.auto {
+    overflow: auto;
+}
+
+/* 5. Horizontal hidden, vertical scrolling */
+.xy-box {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*
+overflow :-
+| Property  | Kya hota hai                |
+| --------- | --------------------------- |
+| `visible` | Extra content bahar visible |
+| `hidden`  | Extra content hide          |
+| `scroll`  | Scrollbars available        |
+| `auto`    | Zarurat par scrollbar       |
+
+*
+/

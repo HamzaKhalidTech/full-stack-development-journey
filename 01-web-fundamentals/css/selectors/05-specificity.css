@@ -1,0 +1,44 @@
+p {
+    color: red;
+}
+
+.text {
+    color: blue;
+}
+
+#main-text {
+    color: green;
+}
+
+/*
+CSS Specificity — Part 1
+Highest
+   ↓
+
+ID
+#
+   ↓
+Class
+.
+   ↓
+Element
+p, h1, div
+   ↓
+Universal
+*
+   ↓
+Lowest
+
+Specificity — Part 2: Specificity Calculation
+| Selector                  |  Score |
+| ------------------------- | -----: |
+| Inline style              | `1000` |
+| ID `#id`                  |  `100` |
+| Class `.class`            |   `10` |
+| Pseudo-class `:hover`     |   `10` |
+| Element `p`               |    `1` |
+| Pseudo-element `::before` |    `1` |
+| Universal `*`             |    `0` |
+
+
+*/

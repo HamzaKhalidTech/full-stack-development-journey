@@ -1,0 +1,50 @@
+.block {
+    background-color: lightblue;
+    display: inline-block;
+}
+
+.inline {
+    background-color: lightgreen;
+}
+
+.inline-block {
+    background-color: lightcoral;
+    padding: 4px;
+}
+
+.hidden {
+    background-color: black;
+    color: white;
+}
+
+/* Lesson 1 Display 
+<div>
+<h1> → <h6>
+<p>
+<section>
+<header>
+<footer>
+
+
+
+BLOCK
+↓
+New line
+Width/height work
+
+INLINE
+↓
+Same line
+Width/height normally don't work
+
+INLINE-BLOCK
+↓
+Same line
+Width/height work
+padding/margin control kar sakte h
+
+NONE
+↓
+Completely removed from layout
+
+*/

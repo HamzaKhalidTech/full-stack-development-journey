@@ -30,3 +30,12 @@ h2 {
   color: brown;
   font-weight: 500;
 }
+
+/*
+Lesson 2 — Combinator Selectors
+*          → Universal
+h1         → Element
+.class     → Class
+#id        → ID
+h1, h2     → Grouping
+*/

@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.box {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+}
+
+.box-one {
+    top: 50px;
+    left: 50px;
+    background-color: lightblue;
+    z-index: 1;
+}
+
+.box-two {
+    top: 100px;
+    left: 150px;
+    background-color: lightcoral;
+    z-index: 2;
+}
+
+
+
+/*
+Lesson 3: z-index
+Socho do boxes overlap kar rahe hain:
+Box A
+   ┌──────────────┐
+   │              │
+   │      ┌───────┼────────┐
+   │      │ Box B │        │
+   └──────┼───────┘        │
+          └─────────────────┘
+Agar dono overlap karein, z-index se layering control kar sakte ho.
+*/

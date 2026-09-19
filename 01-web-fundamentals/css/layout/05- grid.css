@@ -1,0 +1,38 @@
+.container {
+    width: 600px;
+    height: 400px;
+    border: 2px solid black;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.box {
+    background-color: lightblue;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+}
+
+/*
+ Grid :-
+Flexbox
+→ One-dimensional
+→ Row OR Column
+
+Grid
+→ Two-dimensional
+→ Rows AND Columns
+
+Flexbox → Navbar, buttons, small component alignment
+
+Grid → Product grids, dashboard layouts, gallery layouts
+
+*/

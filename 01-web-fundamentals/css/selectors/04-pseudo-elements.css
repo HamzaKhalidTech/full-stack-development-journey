@@ -1,0 +1,42 @@
+h1::before {
+    content: "★ ";
+}
+
+h1::after {
+    content: "→";
+}
+
+p::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+
+}
+
+/*
+Phase 2 — Lesson 4: Pseudo-Elements
+Pseudo-class
+   ↓
+Element ki STATE / CONDITION
+:hover
+:focus
+:checked
+
+Pseudo-element
+   ↓
+Element ke KISI PART / VIRTUAL CONTENT ko target
+::before
+::after
+::first-letter
+::first-line
+
+| Pseudo-element   | Purpose          |
+| ---------------- | ---------------- |
+| `::before`       | content se pehle |
+| `::after`        | content ke baad  |
+| `::first-letter` | first letter     |
+| `::first-line`   | first line       |
+| `::selection`    | selected text    |
+
+*/
