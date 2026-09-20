@@ -271,21 +271,27 @@ Every serious project should include:
 Completed project used to apply the early CSS fundamentals.
 
 ### 02 — Landing Page
-Currently in progress.
+Completed project combining HTML and CSS fundamentals into a responsive developer landing page.
 
-Current work:
-- HTML structure
+Completed:
+- Semantic HTML structure
 - CSS reset and base styles
-- Responsive-ready layout foundation
 - Navigation bar
-
-Next:
 - Hero section
 - Services section
 - About section
-- Contact section
+- Contact CTA
 - Footer
-- Responsive refinement
+- Responsive tablet and mobile layouts
+
+Key concepts practiced:
+- CSS Box Model
+- Flexbox
+- CSS Grid
+- Typography
+- Hover states
+- Media queries
+- Responsive design
 
 ### 03 — Responsive Navbar
 Planned.
@@ -328,9 +334,9 @@ For important learning milestones, I will document:
 
 Current milestone: **CSS fundamentals, selectors, box model, layout, and responsive design completed.**
 
-Current project: **02 — Landing Page**
+Current project: **CSS Projects → 03 — Responsive Navbar**
 
-The landing page is being built step-by-step instead of being copied as one complete template.
+Project 02 — Landing Page is complete and was built step-by-step instead of being copied as one complete template.
 
 ## 🔥 My Rule
 
