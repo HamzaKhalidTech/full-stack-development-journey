@@ -62,5 +62,384 @@ html {
 }
 
 .nav-links a:hover {
-  color: #1d7971;
+  color:  #ddd;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+
+  min-height: 650PX;
+  padding: 80PX 20PX;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background-color:  #f5f7fa;
+
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 800px;
+}
+
+
+.hero-subtitle {
+  margin: 0 0 15px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #111;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin: 25px auto;
+
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #666;
+
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+.btn {
+  display: inline-block;
+
+  padding: 14px 24px;
+
+  border: 2px solid #111;
+  border-radius: 8px;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background-color: #111;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #333;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: #111;
+}
+
+.secondary-btn:hover {
+    background-color: #eee;
+}
+
+/* =========================
+   SERVICES SECTION
+========================= */
+
+.services {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 100px 20px;
+}
+
+.section-heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-heading p {
+  margin: 0 0 10px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-size: 2.5rem;
+  color: #111;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  padding: 35px;
+
+  border: 1px solid #ddd;
+  border-radius: 12px;
+
+  background-color: #fff;
+}
+
+.service-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-size: 1.3rem;
+    color: #111;
+}
+
+.service-card p {
+    margin: 0;
+
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+.service-card:hover {
+    border-color: #111;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    width: 100%;
+    background-color: #f5f7fa;
+}
+
+.about-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  padding: 100px 20px;
+}
+
+.about-content > p:first-child {
+    margin: 0 0 15px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+.about-content h2 {
+    max-width: 700px;
+    margin: 0 0 25px;
+
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #111;
+}
+
+.about-content p:last-child {
+    max-width: 700px;
+    margin: 0;
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact {
+  width: 100%;
+  padding: 100px 20px;
+
+  text-align: center;
+
+  background-color: #111;
+  color: white;
+}
+
+.contact-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content > p {
+    margin: 0 0 15px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+.contact-content h2 {
+    margin: 0 0 30px;
+
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.contact .primary-btn {
+    display: inline-block;
+
+    background-color: white;
+    color: #111;
+
+    border-color: white;
+}
+
+.contact .primary-btn:hover {
+    background-color: #ddd;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    width: 100%;
+    padding: 25px 20px;
+
+    text-align: center;
+
+    background-color: #0a0a0a;
+    color: #888;
+}
+.footer p {
+    margin: 0;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media(max-width:700) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+   font-size: 0.9rem;
+  }
+  
+   .hero {
+        min-height: 550px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-content h2 {
+        font-size: 2.5rem;
+    } 
+}
+/* 
+/* Mobile */
+@media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .services {
+        padding: 70px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 25px;
+    }
+
+    .about-content {
+        padding: 70px 15px;
+    }
+
+    .about-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact {
+        padding: 70px 15px;
+    }
+
+    .contact-content h2 {
+        font-size: 2.2rem;
+    } 
 }
