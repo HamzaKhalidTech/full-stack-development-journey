@@ -1,0 +1,148 @@
+/*
+translate()
+scale()
+rotate()
+skew()
+*/
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* ================================
+   CSS TRANSFORMS
+================================ */
+
+
+/* ================================
+   1. TRANSLATE X
+================================ */
+
+.translate-x {
+    width: 150px;
+    height: 100px;
+
+    background-color: #2563eb;
+
+    transition: transform 0.3s ease;
+}
+
+.translate-x:hover {
+    transform: translateX(40px);
+}
+
+
+/* ================================
+   2. TRANSLATE Y
+================================ */
+
+.translate-y {
+    width: 150px;
+    height: 100px;
+
+    background-color: #16a34a;
+
+    transition: transform 0.3s ease;
+}
+
+.translate-y:hover {
+    transform: translateY(-20px);
+}
+
+
+/* ================================
+   3. SCALE
+================================ */
+
+.scale-box {
+    width: 150px;
+    height: 100px;
+
+    background-color: #7c3aed;
+
+    transition: transform 0.3s ease;
+}
+
+.scale-box:hover {
+    transform: scale(1.1);
+}
+
+
+/* ================================
+   4. ROTATE
+================================ */
+
+.rotate-box {
+    width: 150px;
+    height: 100px;
+
+    background-color: #f59e0b;
+
+    transition: transform 0.3s ease;
+}
+
+.rotate-box:hover {
+    transform: rotate(8deg);
+}
+
+
+/* ================================
+   5. SKEW
+================================ */
+
+.skew-box {
+    width: 150px;
+    height: 100px;
+
+    background-color: #dc2626;
+
+    transition: transform 0.3s ease;
+}
+
+.skew-box:hover {
+    transform: skewX(10deg);
+}
+
+
+/* ================================
+   6. MULTIPLE TRANSFORMS
+================================ */
+
+.multiple-transform {
+    width: 150px;
+    height: 100px;
+
+    background-color: #0891b2;
+
+    transition: transform 0.3s ease;
+}
+
+.multiple-transform:hover {
+    transform:
+        translateY(-10px)
+        scale(1.05)
+        rotate(2deg);
+}
+
+
+/* ================================
+   7. TRANSFORM ORIGIN
+================================ */
+
+.origin-box {
+    width: 150px;
+    height: 100px;
+
+    background-color: #db2777;
+
+    transform-origin: top left;
+
+    transition: transform 0.3s ease;
+}
+
+.origin-box:hover {
+    transform: rotate(15deg);
+}

@@ -1,0 +1,106 @@
+/* ================================
+   CALC(), MIN() & MAX()
+================================ */
+
+
+/* ================================
+   1. CALC()
+================================ */
+
+.calc-container {
+    width: calc(100% - 40px);
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background-color: #e0f2fe;
+
+    border: 2px solid #0284c7;
+}
+
+
+/* ================================
+   2. CALC() WITH VIEWPORT
+================================ */
+
+.hero {
+    min-height: calc(100vh - 80px);
+
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f3f4f6;
+}
+
+
+/* ================================
+   3. MIN()
+================================ */
+
+.container {
+    width: min(calc(100% - 32px), 1200px);
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+}
+
+
+/* ================================
+   4. MAX()
+================================ */
+
+.card {
+    width: max(280px, 40%);
+
+    min-height: 200px;
+
+    margin: 40px auto;
+
+    padding: 24px;
+
+    background-color: #fef3c7;
+
+    border: 1px solid #f59e0b;
+    border-radius: 12px;
+}
+
+
+/* ================================
+   5. COMBINING CALC() + MIN()
+================================ */
+
+.content {
+    width: min(calc(100% - 64px), 1000px);
+
+    margin: 0 auto;
+}
+
+
+/* ================================
+   6. PRACTICAL RESPONSIVE SPACING
+================================ */
+
+.section {
+    padding: max(30px, 5vw) 20px;
+}
+
+
+/* ================================
+   7. RESPONSIVE HEADING
+================================ */
+
+.hero-title {
+    font-size: clamp(2rem, 5vw, 4rem);
+
+    line-height: 1.1;
+}

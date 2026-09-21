@@ -1,0 +1,150 @@
+/* ================================
+   CSS TRANSITIONS
+================================ */
+
+
+/* ================================
+   1. BASIC TRANSITION
+================================ */
+
+.basic-button {
+    padding: 12px 24px;
+
+    background-color: #2563eb;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.basic-button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ================================
+   2. COLOR + BACKGROUND
+================================ */
+
+.color-button {
+    padding: 12px 24px;
+
+    background-color: #111827;
+    color: #ffffff;
+
+    border: 2px solid #111827;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.color-button:hover {
+    background-color: #ffffff;
+    color: #111827;
+    border-color: #111827;
+}
+
+
+/* ================================
+   3. TRANSITION WITH TRANSFORM
+================================ */
+
+.transform-card {
+    width: 250px;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.transform-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================================
+   4. BORDER RADIUS
+================================ */
+
+.radius-box {
+    width: 200px;
+    height: 120px;
+
+    background-color: #7c3aed;
+
+    border-radius: 8px;
+
+    transition: border-radius 0.4s ease;
+}
+
+.radius-box:hover {
+    border-radius: 40px;
+}
+
+
+/* ================================
+   5. OPACITY
+================================ */
+
+.opacity-box {
+    width: 200px;
+    height: 120px;
+
+    background-color: #16a34a;
+
+    transition: opacity 0.3s ease;
+}
+
+.opacity-box:hover {
+    opacity: 0.5;
+}
+
+
+/* ================================
+   6. ALL PROPERTIES
+================================ */
+
+.all-transition {
+    padding: 20px;
+
+    background-color: #f3f4f6;
+
+    color: #111827;
+
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.all-transition:hover {
+    background-color: #111827;
+
+    color: #ffffff;
+
+    border-color: #111827;
+
+    transform: translateY(-5px);
+}

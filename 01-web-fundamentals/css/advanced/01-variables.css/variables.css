@@ -1,0 +1,56 @@
+/* ================================
+   CSS VARIABLES
+================================ */
+
+:root {
+  --primary-color : #2563eb;
+  --secondary-color: #7c3aed;
+
+  --text-color: #111827;
+  --muted-color: #6b7280;
+
+  --background-color:  #f5f7fb;
+  --white-color: #ffffff;
+
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+
+  --border-radius: 12px;
+
+}
+
+/* ================================
+   EXAMPLE
+================================ */
+.card {
+  padding: var(--spacing-large);
+  
+  background-color: var(--white-color);
+
+  color: var(--text-color);
+
+  border-radius: var(--border-radius);
+}
+
+
+.button {
+    padding: var(--spacing-small) var(--spacing-medium);
+
+    background-color: var(--primary-color);
+
+    color: var(--white-color);
+
+    border-radius: var(--border-radius);
+}
+
+
+.secondary-button {
+    background-color: var(--secondary-color);
+}
+
+
+.description {
+    color: var(--muted-color);
+}
+
