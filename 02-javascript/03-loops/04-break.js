@@ -1,2 +1,96 @@
-// JavaScript topic placeholder.
-// This file will be completed during the JavaScript learning phase.
+// ======================================================
+// 04 - BREAK
+// ======================================================
+
+
+// ======================================================
+// 1. BASIC BREAK
+// ======================================================
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+
+    if (i === 5) {
+        break;
+    }
+}
+
+
+// ======================================================
+// 2. BREAK BEFORE PRINT
+// ======================================================
+
+for (let i = 1; i <= 10; i++) {
+
+    if (i === 5) {
+        break;
+    }
+
+    console.log(i);
+}
+
+
+// ======================================================
+// 3. WHILE LOOP WITH BREAK
+// ======================================================
+
+let number = 1;
+
+while (number <= 10) {
+    console.log(number);
+
+    if (number === 5) {
+        break;
+    }
+
+    number++;
+}
+
+
+// ======================================================
+// 4. SEARCH EXAMPLE
+// ======================================================
+
+let numbers = [2, 4, 7, 9, 12];
+
+for (let i = 0; i < numbers.length; i++) {
+
+    if (numbers[i] === 7) {
+        console.log("Number found!");
+        break;
+    }
+}
+
+
+// ======================================================
+// 5. ECOMMERCE STOCK EXAMPLE
+// ======================================================
+
+let stock = [10, 8, 5, 0, 12, 15];
+
+for (let i = 0; i < stock.length; i++) {
+
+    if (stock[i] === 0) {
+        console.log("Out of stock product found!");
+        break;
+    }
+
+    console.log(`Product ${i + 1} is available`);
+}
+
+
+// ======================================================
+// 6. NESTED LOOP WITH BREAK
+// ======================================================
+
+for (let i = 1; i <= 3; i++) {
+
+    for (let j = 1; j <= 5; j++) {
+
+        if (j === 3) {
+            break;
+        }
+
+        console.log(`i=${i}, j=${j}`);
+    }
+}
