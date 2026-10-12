@@ -1,18 +1,18 @@
 # Full-Stack Development Journey
 
-A structured, project-driven journey to become a professional Full-Stack Developer.
+A structured, project-driven journey to becoming a professional Full-Stack Developer.
 
-This repository documents what I learn, what I build, the problems I solve, and how my skills evolve over time.
+This repository documents what I learn, what I build, the problems I solve, and how my development skills evolve over time. My focus is on understanding concepts, applying them through practical projects, and gradually learning to build and maintain real-world web applications.
 
 ## 🎯 Goal
 
-Build strong full-stack development skills and become capable of building, deploying, maintaining, and improving real-world web applications.
+Build strong full-stack development skills and become capable of designing, developing, testing, deploying, maintaining, and improving real-world web applications.
 
 ## 🧠 Learning Philosophy
 
-> **Learn → Practice → Build → Document → Review → Improve**
+**Learn → Understand → Practice → Build → Document → Review → Improve**
 
-I will not focus only on watching tutorials. Every major concept should lead to practical work, and every project should teach something that can be applied to real development.
+I do not want to rely only on watching tutorials or copying code. Every major concept should lead to practical work, and every project should help me understand how software is built in real development environments.
 
 ## 🗂️ Repository Structure
 
@@ -35,6 +35,15 @@ full-stack-development-journey/
 │       └── projects/
 │
 ├── 02-javascript/
+│   ├── 01-fundamentals/
+│   ├── 02-control-flow/
+│   ├── 03-loops/
+│   ├── 04-functions/
+│   ├── 05-arrays/
+│   ├── 06-objects/
+│   ├── 07-sets-maps/
+│   └── 07-strings-numbers-dates/
+│
 ├── 03-git-github/
 ├── 04-react/
 ├── 05-nextjs/
@@ -46,142 +55,166 @@ full-stack-development-journey/
 └── 11-real-world-development/
 ```
 
-## 🛣️ Roadmap
+*Note: The JavaScript folder names above represent the current learning structure. The exact folders and numbering may evolve as the curriculum grows.*
+
+## 🛣️ Learning Roadmap
 
 ### Phase 1 — Web Fundamentals
 
-#### HTML
-- HTML structure
+**HTML**
+- Document structure and syntax
 - Semantic HTML
-- Forms and validation
-- Accessibility basics
+- Forms and input elements
+- Accessibility fundamentals
 - Practical HTML projects
 
-#### CSS
-- CSS syntax
-- Colors
-- Units
-- Typography and fonts
-- Text properties
-- Backgrounds
-- Borders
-- Selectors
-- Box model
-- Display
-- Positioning
+**CSS**
+- Syntax, colors, units, and typography
+- Text properties, backgrounds, and borders
+- Selectors, specificity, and cascade
+- Box model and box sizing
+- Display and positioning
 - Z-index
-- Flexbox
-- CSS Grid
-- Responsive design
-- Media queries
-- Advanced CSS
-- Responsive UI projects
+- Flexbox and CSS Grid
+- Responsive design and media queries
+- Transitions, transforms, animations, and other advanced CSS features
+- Practical responsive website projects
 
-**Target:** Build clean, responsive websites without relying on frameworks.
+**Target:** Build clean, accessible, responsive websites without relying on frameworks.
 
 ### Phase 2 — JavaScript
+
+**Core concepts**
 - Variables and data types
-- Operators and conditionals
+- Operators and type conversion
+- Input and output
+- Conditional statements
 - Loops
-- Functions
-- Arrays and objects
-- Scope and closures
+- Functions and scope
+
+**Data handling**
+- Arrays and array methods
+- Objects and object methods
+- Sets and Maps
+- Strings and string methods
+- Template literals
+- Number conversion and formatting
+- Math operations
+- Date and time basics
+
+**Upcoming concepts**
 - DOM manipulation
-- Events
+- Events and event handling
 - Modules
+- Error handling
 - Promises
 - Async/await
 - Fetch API
-- Error handling
 - Practical JavaScript projects
 
+**Target:** Write understandable JavaScript, solve programming problems, and build interactive browser applications.
+
 ### Phase 3 — Git & GitHub
+
 - Git fundamentals
-- Commits and branches
-- Merge and conflict resolution
-- Pull requests
-- Issues
+- Staging and commits
+- Branches and merging
+- Pulling and pushing changes
+- Merge conflict resolution
+- Pull requests and issues
 - README documentation
-- Professional repository management
+- Repository organization
+- Professional Git workflow
+
+**Target:** Maintain a clean, understandable development history and collaborate effectively.
 
 ### Phase 4 — React
-- Components
-- Props
-- State
-- Events
-- Forms
+
+- Components and JSX
+- Props and state
+- Events and forms
 - Conditional rendering
 - Lists and keys
 - Hooks
+- Reusable components
 - React Router
 - API integration
-- Reusable components
-- Production-style projects
+- Project architecture
+- Production-style applications
+
+**Target:** Build maintainable, component-based user interfaces.
 
 ### Phase 5 — Next.js
+
 - App Router
 - Pages and layouts
 - Server and Client Components
 - Data fetching
 - Route handlers
 - Authentication
-- SEO
+- SEO fundamentals
+- Performance optimization
 - Deployment
 
+**Target:** Build production-oriented React applications with Next.js.
+
 ### Phase 6 — Backend Development
-- Node.js
-- Express
+
+- Node.js fundamentals
+- Express.js
 - REST APIs
-- Middleware
-- Validation
+- Routing and middleware
+- Request validation
 - Error handling
-- Authentication
-- Authorization
+- Authentication and authorization
 - Cookies and tokens
 - Security fundamentals
+- API documentation
+
+**Target:** Develop secure, maintainable backend services.
 
 ### Phase 7 — Databases
 
-#### MongoDB
+**MongoDB**
 - Documents and collections
 - Data modeling
-- CRUD
-- Queries
-- Indexing
+- CRUD operations
+- Queries and indexing
 
-#### PostgreSQL
+**PostgreSQL**
 - SQL fundamentals
-- CRUD
-- Relationships
-- Joins
-- Indexes
-- Transactions
-- Data modeling
+- CRUD operations
+- Relationships and joins
+- Indexes and transactions
+- Relational data modeling
+
+**Target:** Design appropriate data models and build applications that store and retrieve data reliably.
 
 ### Phase 8 — Full-Stack Projects
 
-Planned projects:
+Planned project categories:
 
-1. Responsive business website
-2. JavaScript productivity application
-3. React dashboard
-4. REST API application
-5. Full-stack authentication application
-6. Full-stack e-commerce application
-7. Production-style capstone project
+- Responsive business website
+- JavaScript productivity application
+- React dashboard
+- REST API application
+- Full-stack authentication application
+- Full-stack e-commerce application
+- Production-style capstone project
 
-Every serious project should include:
-- README
-- Features
-- Tech stack
+Every substantial project should aim to include:
+
+- A clear README
+- Features and technology stack
 - Project structure
 - Setup instructions
 - Environment variable example
-- Screenshots/demo
-- API documentation where applicable
-- Lessons learned
+- Screenshots or a live demo
+- API documentation, where applicable
+- Lessons learned and future improvements
 
 ### Phase 9 — Testing
+
 - Unit testing
 - Integration testing
 - API testing
@@ -189,16 +222,17 @@ Every serious project should include:
 - Debugging workflows
 
 ### Phase 10 — Deployment
+
 - Environment configuration
 - Production builds
-- Hosting
-- Domains
+- Hosting and domains
 - CI/CD fundamentals
 - Logs and monitoring
 - Basic DevOps practices
 
 ### Phase 11 — Real-World Development
-- API integration
+
+- Third-party API integration
 - Authentication and security
 - Performance optimization
 - Clean architecture
@@ -208,7 +242,7 @@ Every serious project should include:
 - Production debugging
 - Maintainability
 
-## 📊 Progress
+## 📊 Learning Progress
 
 | Area | Status |
 |---|---|
@@ -218,129 +252,152 @@ Every serious project should include:
 | CSS Box Model | ✅ Completed |
 | CSS Layout | ✅ Completed |
 | Responsive Design | ✅ Completed |
-| CSS Advanced | ✅ Completed |
-| JavaScript | ⏳ Upcoming |
-| Git/GitHub | 🔄 Repository workflow in progress |
-| React | ⏳ Upcoming |
-| Next.js | ⏳ Upcoming |
-| Node/Express | ⏳ Upcoming |
-| MongoDB | ⏳ Upcoming |
-| PostgreSQL | ⏳ Upcoming |
-| Testing | ⏳ Upcoming |
-| Deployment | ⏳ Upcoming |
-| Full-Stack Projects | ⏳ Upcoming |
+| Advanced CSS | ✅ Core topics studied |
+| CSS Projects | 🔄 Ongoing |
+| JavaScript Fundamentals | ✅ Core lessons studied |
+| JavaScript Control Flow | ✅ Core lessons studied |
+| JavaScript Loops | ✅ Core lessons studied |
+| JavaScript Functions | ✅ Core lessons studied |
+| JavaScript Arrays | 🔄 Practice and revision |
+| JavaScript Objects | 🔄 Learning |
+| JavaScript Sets & Maps | 🔄 Learning |
+| Strings, Numbers, Math & Dates | 🔄 Core lessons studied |
+| Git & GitHub | 🔄 Ongoing |
+| React | ⏳ Planned |
+| Next.js | ⏳ Planned |
+| Node.js & Express | ⏳ Planned |
+| MongoDB & PostgreSQL | ⏳ Planned |
+| Testing | ⏳ Planned |
+| Deployment | ⏳ Planned |
+| Advanced Full-Stack Projects | ⏳ Planned |
+
+*Progress is updated as topics are practiced and projects are completed. Studying a topic does not automatically mean that every exercise or project in that topic is complete.*
 
 ## 📚 CSS Progress
 
-### Fundamentals — Completed
-- [x] CSS Syntax
-- [x] Colors
-- [x] Units
-- [x] Typography & Fonts
-- [x] Text Properties
-- [x] Backgrounds
-- [x] Borders
+### Fundamentals
+- CSS syntax
+- Colors and units
+- Typography and fonts
+- Text properties
+- Backgrounds and borders
 
-### Selectors — Completed
-- [x] Basic Selectors
-- [x] Combinators
-- [x] Pseudo-classes
-- [x] Pseudo-elements
-- [x] Specificity and Cascade
+### Selectors
+- Basic selectors
+- Combinators
+- Pseudo-classes
+- Pseudo-elements
+- Specificity and cascade
 
-### Box Model — Completed
-- [x] Width & Height
-- [x] Margin
-- [x] Padding
-- [x] Border
-- [x] Box Sizing
-- [x] Overflow
+### Box Model
+- Width and height
+- Margin and padding
+- Borders
+- Box sizing
+- Overflow
 
-### Layout — Completed
-- [x] Display
-- [x] Position
-- [x] Z-index
-- [x] Flexbox
-- [x] CSS Grid
-- [x] Responsive Design
-- [x] Media Queries
+### Layout and Responsive Design
+- Display
+- Positioning
+- Z-index
+- Flexbox
+- CSS Grid
+- Responsive layouts
+- Media queries
+
+### Advanced CSS
+- CSS variables
+- `calc()`, `min()`, and `max()`
+- Transitions
+- Transforms
+- Animations
+- Filters
 
 ## 🛠️ CSS Projects
 
-### 01 — Developer Profile Card
-Completed project used to apply the early CSS fundamentals.
+### 01 — Developer Profile
+
+A practical project for applying HTML structure and CSS styling fundamentals.
 
 ### 02 — Landing Page
-Completed project combining HTML and CSS fundamentals into a responsive developer landing page.
 
-Completed:
-- Semantic HTML structure
-- CSS reset and base styles
-- Navigation bar
-- Hero section
-- Services section
-- About section
-- Contact CTA
-- Footer
+A responsive landing page combining HTML and CSS concepts.
+
+Concepts practiced include:
+- Semantic page structure
+- Navigation and hero sections
+- Content sections and footer
+- Flexbox and CSS Grid
+- Typography and hover states
 - Responsive tablet and mobile layouts
 
-Key concepts practiced:
-- CSS Box Model
-- Flexbox
-- CSS Grid
-- Typography
-- Hover states
-- Media queries
-- Responsive design
-
 ### 03 — Responsive Navbar
-Planned.
+**Status:** Planned / in progress
 
 ### 04 — Pricing Section
-Planned.
+**Status:** Planned
 
-### 05 — Responsive Website
-Planned.
+### 05 — NOVA Digital Agency
+A website project for practicing more advanced CSS styling and responsive UI development.
+
+*Project status should be updated as each project is reviewed and finalized.*
+
+## 🧪 JavaScript Learning Standards
+
+For each JavaScript topic, the goal is to maintain:
+
+- Separate, clearly named lesson files
+- Small examples with understandable output
+- Practical exercises
+- Common mistakes and important notes
+- Revision questions
+- A README describing the topic
+
+The focus is on understanding why the code works, not just memorizing syntax.
 
 ## 📐 Project Standards
 
-For every meaningful project, I will aim for:
+For every meaningful project, I aim for:
 
 - Clean and readable code
 - Meaningful naming
-- Responsive UI
-- Reusable code
-- Proper error handling
+- Responsive and accessible UI
+- Reusable code where appropriate
+- Proper validation and error handling
 - Secure handling of secrets
-- Environment variables
+- Environment variables for configuration
 - Meaningful Git history
 - Clear documentation
-- Realistic features instead of tutorial-only demos
+- Realistic features instead of tutorial-only demonstrations
 
 ## 📝 Learning Log
 
-For important learning milestones, I will document:
+For important milestones, I aim to document:
 
 - What I learned
 - What I built
 - What confused me
 - Bugs I solved
 - What I would improve
-- Useful resources
+- Useful references
 
 ## 🚀 Current Focus
 
-**Phase 1 — Web Fundamentals → CSS Projects**
+**Phase 2 — JavaScript Fundamentals and Practical Development**
 
-Current milestone: **CSS fundamentals, selectors, box model, layout, and responsive design completed.**
+Current learning areas:
+- JavaScript core concepts
+- Arrays, objects, Sets, and Maps
+- String and number methods
+- Math operations and Date basics
+- Practical exercises and revision
+- Maintaining the learning repository through Git and GitHub
 
-Current project: **CSS Projects → 03 — Responsive Navbar**
-
-Project 02 — Landing Page is complete and was built step-by-step instead of being copied as one complete template.
+The next objective is to strengthen JavaScript fundamentals before moving into DOM manipulation, events, asynchronous JavaScript, and larger projects.
 
 ## 🔥 My Rule
 
-> **Don't just watch. Don't just copy. Understand it, build it, break it, fix it, and document it.**
+> Don't just watch. Don't just copy. Understand it, build it, break it, fix it, and document it.
 
 ## 👨‍💻 Author
 
@@ -348,6 +405,6 @@ Project 02 — Landing Page is complete and was built step-by-step instead of be
 
 GitHub: [@HamzaKhalidTech](https://github.com/HamzaKhalidTech)
 
----
+Repository: [full-stack-development-journey](https://github.com/HamzaKhalidTech/full-stack-development-journey)
 
-This repository will evolve with my skills. The goal is not to make a perfect repository on day one — the goal is to consistently improve it while becoming a better developer.
+This repository will evolve with my skills. The goal is not to create a perfect repository on day one, but to improve consistently while becoming a better developer.
