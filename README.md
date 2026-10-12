@@ -218,7 +218,7 @@ Every serious project should include:
 | CSS Box Model | ✅ Completed |
 | CSS Layout | ✅ Completed |
 | Responsive Design | ✅ Completed |
-| CSS Advanced | ⏳ Upcoming |
+| CSS Advanced | ✅ Completed |
 | JavaScript | ⏳ Upcoming |
 | Git/GitHub | 🔄 Repository workflow in progress |
 | React | ⏳ Upcoming |
