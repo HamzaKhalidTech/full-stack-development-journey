@@ -1,2 +1,21 @@
-// JavaScript topic placeholder.
-// This file will be completed during the JavaScript learning phase.
+/*
+Topic: Closures
+File: 05-closures.js
+*/
+
+function createCounter() {
+    let count = 0;
+
+    function increment() {
+        count++;
+        console.log("Count:", count);
+    }
+
+    return increment;
+}
+
+const counter = createCounter();
+
+counter(); // Count: 1
+counter(); // Count: 2
+counter(); // Count: 3
