@@ -41,7 +41,6 @@ full-stack-development-journey/
 │   ├── 04-functions/
 │   ├── 05-arrays/
 │   ├── 06-objects/
-│   ├── 07-sets-maps/
 │   └── 07-strings-numbers-dates/
 │
 ├── 03-git-github/
