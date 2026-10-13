@@ -1,1 +1,101 @@
-<!-- JavaScript learning file. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM Practice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        line-height: 1.6;
+      }
+
+      .card {
+        padding: 16px;
+        margin: 12px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+
+      .highlight {
+        background-color: #fff3cd;
+        border-color: #e0a800;
+      }
+
+      button {
+        margin: 5px 5px 5px 0;
+        padding: 10px 14px;
+        cursor: pointer;
+      }
+
+      #item-list li {
+        margin: 8px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-title">JavaScript DOM Practice</h1>
+    <p id="intro">Welcome to DOM learning.</p>
+
+    <section class="card">
+      <h2>Element Selection</h2>
+      <p class="description">First description.</p>
+      <p class="description">Second description.</p>
+      <button id="select-btn">Check Elements</button>
+    </section>
+
+    <section class="card">
+      <h2 id="content-title">Original Heading</h2>
+      <p id="content-text">This is the original paragraph.</p>
+      <button id="content-btn">Change Content</button>
+    </section>
+
+    <section class="card" id="style-card">
+      <h2>Changing Styles</h2>
+      <p id="style-text">Click the button to highlight this card.</p>
+      <button id="style-btn">Toggle Highlight</button>
+    </section>
+
+    <section class="card">
+      <h2>HTML Attributes</h2>
+      <a
+        id="website-link"
+        href="https://example.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visit Example Website
+      </a>
+      <br />
+      <button id="attribute-btn">Update Link</button>
+      <button id="data-btn" data-status="inactive">Check Data Attribute</button>
+    </section>
+
+    <section class="card">
+      <h2>Create Elements</h2>
+      <input id="item-input" type="text" placeholder="Enter an item" />
+      <button id="add-btn">Add Item</button>
+      <ul id="item-list">
+        <li>Existing item</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Remove Elements</h2>
+      <p id="remove-text">This paragraph can be removed.</p>
+      <button id="remove-btn">Remove Paragraph</button>
+    </section>
+
+    <!-- JavaScript files load in this order -->
+    <script src="01-dom-basics.js"></script>
+    <script src="02-selecting-elements.js"></script>
+    <script src="03-changing-content.js"></script>
+    <script src="04-changing-styles.js"></script>
+    <script src="05-attributes.js"></script>
+    <script src="06-create-elements.js"></script>
+    <script src="07-remove-elements.js"></script>
+  </body>
+</html>
