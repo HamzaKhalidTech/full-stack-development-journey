@@ -1,0 +1,119 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 16px;
+            line-height: 1.6;
+        }
+
+        section {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 16px;
+            margin: 18px 0;
+        }
+
+        button, input {
+            padding: 9px 12px;
+            margin: 5px 0;
+        }
+
+        .parent-box {
+            background: #e8f0ff;
+            padding: 20px;
+            border: 1px solid #7aa2ff;
+        }
+
+        .child-box {
+            background: #d1fae5;
+            padding: 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #mouse-area {
+            background: #f1f5f9;
+            padding: 25px;
+            border: 1px dashed #64748b;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Events Practice</h1>
+    <p>Har section mein action perform karo aur output dekho.</p>
+
+    <section>
+        <h2>1. Event Basics</h2>
+        <button id="basics-btn">Test Event</button>
+    </section>
+
+    <section>
+        <h2>2. Click Event</h2>
+        <button id="click-btn">Click Me</button>
+        <p id="click-output">Waiting for click...</p>
+    </section>
+
+    <section>
+        <h2>3. Input Event</h2>
+        <input id="name-input" type="text" placeholder="Type your name">
+        <p id="input-output">Your text will appear here.</p>
+    </section>
+
+    <section>
+        <h2>4. Submit Event</h2>
+        <form id="signup-form">
+            <input id="email-input" type="email" placeholder="Enter email" required>
+            <button type="submit">Submit Form</button>
+        </form>
+        <p id="form-output"></p>
+    </section>
+
+    <section>
+        <h2>5. Keyboard Events</h2>
+        <input id="keyboard-input" type="text" placeholder="Press any key">
+        <p id="keyboard-output">Keyboard output will appear here.</p>
+    </section>
+
+    <section>
+        <h2>6. Mouse Events</h2>
+        <div id="mouse-area">
+            Move your mouse here and click.
+        </div>
+        <p id="mouse-output">Mouse output will appear here.</p>
+    </section>
+
+    <section>
+        <h2>7. Event Object</h2>
+        <button id="object-btn">Inspect Event</button>
+        <p id="object-output"></p>
+    </section>
+
+    <section>
+        <h2>8. Event Bubbling</h2>
+        <div id="parent-box" class="parent-box">
+            Parent Box
+            <div id="child-box" class="child-box">
+                Child Box — click here
+            </div>
+        </div>
+        <p id="bubbling-output"></p>
+    </section>
+
+    <script src="01-event-basics.js" defer></script>
+    <script src="02-click.js" defer></script>
+    <script src="03-input.js" defer></script>
+    <script src="04-submit.js" defer></script>
+    <script src="05-keyboard-events.js" defer></script>
+    <script src="06-mouse-events.js" defer></script>
+    <script src="07-event-object.js" defer></script>
+    <script src="08-event-bubbling.js" defer></script>
+</body>
+</html>
