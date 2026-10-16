@@ -1,1 +1,178 @@
-<!-- JavaScript learning file. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Forms Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 750px;
+            margin: 30px auto;
+            padding: 0 16px;
+            line-height: 1.6;
+        }
+
+        section {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, button {
+            padding: 9px;
+            margin-top: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            width: 100%;
+            max-width: 350px;
+            box-sizing: border-box;
+        }
+
+        .error {
+            color: #c62828;
+        }
+
+        .success {
+            color: #16803c;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Forms Practice</h1>
+
+    <section>
+        <h2>1. Basic Registration Form</h2>
+
+        <form id="basic-form">
+            <label for="basic-name">Full Name</label>
+            <input
+                type="text"
+                id="basic-name"
+                name="fullName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="basic-email">Email</label>
+            <input
+                type="email"
+                id="basic-email"
+                name="email"
+                placeholder="you@example.com"
+                required
+            >
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="basic-output"></p>
+    </section>
+
+    <section>
+        <h2>2. Input Validation</h2>
+
+        <form id="validation-form">
+            <label for="validation-name">Name (minimum 3 characters)</label>
+            <input type="text" id="validation-name" required>
+
+            <label for="validation-password">Password (minimum 8 characters)</label>
+            <input
+                type="password"
+                id="validation-password"
+                minlength="8"
+                required
+            >
+
+            <label for="validation-age">Age (18 to 100)</label>
+            <input
+                type="number"
+                id="validation-age"
+                min="18"
+                max="100"
+                required
+            >
+
+            <button type="submit">Validate</button>
+        </form>
+
+        <p id="validation-output" aria-live="polite"></p>
+    </section>
+
+    <section>
+        <h2>3. Checkbox and Radio Buttons</h2>
+
+        <form id="preferences-form">
+            <p>Select your interests:</p>
+
+            <label>
+                <input type="checkbox" name="interest" value="web">
+                Web Development
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="design">
+                UI/UX Design
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="ai">
+                Artificial Intelligence
+            </label>
+
+            <p>Select your learning mode:</p>
+
+            <label>
+                <input type="radio" name="learningMode" value="online" required>
+                Online
+            </label>
+
+            <label>
+                <input type="radio" name="learningMode" value="onsite">
+                On-site
+            </label>
+
+            <button type="submit">Save Preferences</button>
+        </form>
+
+        <p id="preferences-output" aria-live="polite"></p>
+    </section>
+
+    <section>
+        <h2>4. Select and Options</h2>
+
+        <form id="course-form">
+            <label for="course-select">Choose a course</label>
+
+            <select id="course-select" name="course" required>
+                <option value="">-- Select a course --</option>
+                <option value="javascript">JavaScript</option>
+                <option value="react">React</option>
+                <option value="node">Node.js</option>
+                <option value="database">Databases</option>
+            </select>
+
+            <button type="submit">Choose Course</button>
+        </form>
+
+        <p id="course-output" aria-live="polite"></p>
+    </section>
+
+    <script src="01-form-basics.js" defer></script>
+    <script src="02-input-validation.js" defer></script>
+    <script src="03-checkbox-radio.js" defer></script>
+    <script src="04-select-options.js" defer></script>
+</body>
+</html>
