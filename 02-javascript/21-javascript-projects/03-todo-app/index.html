@@ -1,1 +1,104 @@
-<!-- JavaScript project scaffold placeholder. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DevTrack helps developers plan tasks, track learning progress, and build consistent habits"
+    />
+    <title>DevTrack - Developer Workspace</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#dashboard" arial-label="DevTrack home">
+          <span class="brand-mark">D</span>
+          <span>DevTrack</span>
+          <span class="brand-dot">.</span>
+        </a>
+        <p class="nav-caption">WORKSPACE</p>
+        <nav class="nav-list" aria-label="Main navigation">
+          <a href="nav-link active" href="#dashboard" data-view="dashboard">
+            <span>◫</span>
+            Dashboard
+          </a>
+          <a class="nav-link" href="#tasks-section" data-view="tasks">
+            <span>☷</span>
+            All tasks
+            <span class="nav-count" id="nav-task-count">0</span>
+          </a>
+          <a class="nav-list" href="#today-section" data-view="today">
+            <span>◷</span>
+            Today
+          </a>
+          <a class="nav-link" href="#analytics-section" data-view="analytics">
+            <span>▥</span>
+            Analytics
+          </a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="sidebar-tip">
+            <span class="tip-symbol">✦</span>
+            <h3>Small steps matter.</h3>
+            <p>Build consistency, one focused task at a time.</p>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content" id="dashboard">
+        <header class="topbar">
+          <button
+            class="icon-button mobile-menu"
+            id=" mobile-menu"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+          <div class="page-heading">
+            <p class="eyebrow" id="today-date">YOUR WORKSPACE</p>
+            <h1>Developer Dashboard</h1>
+            <p class="muted">
+              Plan your learning. Track your progress. Keep building.
+            </p>
+          </div>
+          <div class="topbar-actions">
+            <button class="secondary-button" id="export-btn" type="button">
+              ↓ Export backup
+            </button>
+            <button class="primary-button" id="top-add-btn" type="button">
+              ＋ New task
+            </button>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="hero-kicker"> YOUR NEXT LEVEL STARTS HERE </span>
+            <h2 id="greeting-title">Make today count.</h2>
+            <p>
+              Progress isn,t about doing everything. It's about finishing the
+              next useful thing.
+            </p>
+            <button class="hero-button" id="hero-add-btn" type="button">
+              Create a task
+              <span>→</span>
+            </button>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="hero-glyph">&lt;/&gt;</div>
+            <span class="spark spark-one">✦</span
+            ><span class="spark spark-two">+</span>
+          </div>
+        </section>
+
+        
+      </main>
+    </div>
+  </body>
+</html>
