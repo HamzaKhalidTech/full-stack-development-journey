@@ -5,45 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="DevTrack helps developers plan tasks, track learning progress, and build consistent habits"
+      content="DevTrack helps developers plan tasks, track learning progress, and build consistent habits."
     />
-    <title>DevTrack - Developer Workspace</title>
+    <title>DevTrack — Developer Workspace</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="app-shell">
       <aside class="sidebar" id="sidebar">
-        <a class="brand" href="#dashboard" arial-label="DevTrack home">
-          <span class="brand-mark">D</span>
-          <span>DevTrack</span>
-          <span class="brand-dot">.</span>
-        </a>
+        <a class="brand" href="#dashboard" aria-label="DevTrack home"
+          ><span class="brand-mark">D</span
+          ><span>DevTrack<span class="brand-dot">.</span></span></a
+        >
         <p class="nav-caption">WORKSPACE</p>
         <nav class="nav-list" aria-label="Main navigation">
-          <a href="nav-link active" href="#dashboard" data-view="dashboard">
-            <span>◫</span>
-            Dashboard
-          </a>
-          <a class="nav-link" href="#tasks-section" data-view="tasks">
-            <span>☷</span>
-            All tasks
-            <span class="nav-count" id="nav-task-count">0</span>
-          </a>
-          <a class="nav-list" href="#today-section" data-view="today">
-            <span>◷</span>
-            Today
-          </a>
-          <a class="nav-link" href="#analytics-section" data-view="analytics">
-            <span>▥</span>
-            Analytics
-          </a>
+          <a class="nav-link active" href="#dashboard" data-view="dashboard"
+            ><span>◫</span> Dashboard</a
+          >
+          <a class="nav-link" href="#tasks-section" data-view="tasks"
+            ><span>☷</span> All tasks
+            <span class="nav-count" id="nav-task-count">0</span></a
+          >
+          <a class="nav-link" href="#today-section" data-view="today"
+            ><span>◷</span> Today</a
+          >
+          <a class="nav-link" href="#analytics-section" data-view="analytics"
+            ><span>▥</span> Analytics</a
+          >
         </nav>
         <div class="sidebar-bottom">
           <div class="sidebar-tip">
             <span class="tip-symbol">✦</span>
             <h3>Small steps matter.</h3>
             <p>Build consistency, one focused task at a time.</p>
+          </div>
+          <div class="local-status">
+            <span class="status-dot"></span
+            ><span>Saved locally in this browser</span>
           </div>
         </div>
       </aside>
@@ -52,7 +51,7 @@
         <header class="topbar">
           <button
             class="icon-button mobile-menu"
-            id=" mobile-menu"
+            id="mobile-menu"
             aria-label="Toggle navigation"
             aria-expanded="false"
           >
@@ -77,15 +76,14 @@
 
         <section class="hero">
           <div class="hero-copy">
-            <span class="hero-kicker"> YOUR NEXT LEVEL STARTS HERE </span>
+            <span class="hero-kicker">YOUR NEXT LEVEL STARTS HERE</span>
             <h2 id="greeting-title">Make today count.</h2>
             <p>
-              Progress isn,t about doing everything. It's about finishing the
+              Progress isn't about doing everything. It's about finishing the
               next useful thing.
             </p>
             <button class="hero-button" id="hero-add-btn" type="button">
-              Create a task
-              <span>→</span>
+              Create a task <span>→</span>
             </button>
           </div>
           <div class="hero-art" aria-hidden="true">
@@ -97,8 +95,355 @@
           </div>
         </section>
 
-        
+        <section class="stats-grid" aria-label="Task summary">
+          <article class="stat-card">
+            <div class="stat-card-top">
+              <span>Total tasks</span
+              ><span class="stat-icon icon-blue">☷</span>
+            </div>
+            <strong id="stat-total">0</strong>
+            <p>Across your workspace</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card-top">
+              <span>Completed</span><span class="stat-icon icon-green">✓</span>
+            </div>
+            <strong id="stat-completed">0</strong>
+            <p id="stat-completed-note">Tasks finished</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card-top">
+              <span>Pending</span><span class="stat-icon icon-orange">◷</span>
+            </div>
+            <strong id="stat-pending">0</strong>
+            <p>Still on your list</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card-top">
+              <span>Overdue</span><span class="stat-icon icon-red">!</span>
+            </div>
+            <strong id="stat-overdue">0</strong>
+            <p>Past their due date</p>
+          </article>
+        </section>
+
+        <div class="main-grid">
+          <div class="primary-column">
+            <section class="panel progress-panel" id="progress-section">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">YOUR JOURNEY</p>
+                  <h2>Overall progress</h2>
+                </div>
+                <span class="progress-percent" id="progress-percent">0%</span>
+              </div>
+              <div
+                class="progress-track"
+                id="progress-track"
+                role="progressbar"
+                aria-label="Overall task completion"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <div class="progress-fill" id="progress-fill"></div>
+              </div>
+              <div class="progress-footer">
+                <span id="progress-message">Add a task to get started.</span
+                ><strong id="progress-count">0 of 0 complete</strong>
+              </div>
+            </section>
+
+            <section class="panel task-panel" id="tasks-section">
+              <div class="section-heading task-heading">
+                <div>
+                  <p class="eyebrow">STAY ORGANIZED</p>
+                  <h2>Task manager</h2>
+                  <p class="muted small">
+                    Create, prioritize and complete your learning goals.
+                  </p>
+                </div>
+                <button
+                  class="primary-button compact"
+                  id="panel-add-btn"
+                  type="button"
+                >
+                  ＋ Add task
+                </button>
+              </div>
+
+              <form id="task-form" class="task-form" novalidate>
+                <input type="hidden" id="editing-id" value="" />
+                <div class="form-field field-title">
+                  <label for="task-title"
+                    >Task title <span class="required">*</span></label
+                  ><input
+                    id="task-title"
+                    name="title"
+                    type="text"
+                    maxlength="120"
+                    placeholder="e.g. Practice JavaScript array methods"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="task-category">Category</label
+                  ><select id="task-category" name="category">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="HTML & CSS">HTML &amp; CSS</option>
+                    <option value="React">React</option>
+                    <option value="Backend">Backend</option>
+                    <option value="DSA">DSA</option>
+                    <option value="Career">Career</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="task-priority">Priority</label
+                  ><select id="task-priority" name="priority">
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="low">Low</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="task-due">Due date</label
+                  ><input id="task-due" name="dueDate" type="date" />
+                </div>
+                <div class="form-field field-notes">
+                  <label for="task-notes"
+                    >Notes <span class="optional">(optional)</span></label
+                  ><input
+                    id="task-notes"
+                    name="notes"
+                    type="text"
+                    maxlength="240"
+                    placeholder="Add a detail or next step"
+                  />
+                </div>
+                <div class="form-actions">
+                  <button
+                    class="primary-button"
+                    id="save-task-btn"
+                    type="submit"
+                  >
+                    Add task</button
+                  ><button
+                    class="secondary-button hidden"
+                    id="cancel-edit-btn"
+                    type="button"
+                  >
+                    Cancel edit</button
+                  ><span
+                    class="form-feedback"
+                    id="form-feedback"
+                    role="status"
+                  ></span>
+                </div>
+              </form>
+
+              <div class="toolbar">
+                <label class="search-field"
+                  ><span aria-hidden="true">⌕</span
+                  ><input
+                    type="search"
+                    id="task-search"
+                    placeholder="Search tasks..."
+                    aria-label="Search tasks"
+                /></label>
+                <div class="filter-row">
+                  <label class="filter-control"
+                    ><span>Status</span
+                    ><select id="filter-status">
+                      <option value="all">All</option>
+                      <option value="pending">Pending</option>
+                      <option value="completed">Completed</option>
+                      <option value="overdue">Overdue</option>
+                    </select></label
+                  >
+                  <label class="filter-control"
+                    ><span>Category</span
+                    ><select id="filter-category">
+                      <option value="all">All categories</option>
+                      <option>JavaScript</option>
+                      <option>HTML &amp; CSS</option>
+                      <option>React</option>
+                      <option>Backend</option>
+                      <option>DSA</option>
+                      <option>Career</option>
+                      <option>Personal</option>
+                      <option>Other</option>
+                    </select></label
+                  >
+                  <label class="filter-control"
+                    ><span>Priority</span
+                    ><select id="filter-priority">
+                      <option value="all">All</option>
+                      <option value="high">High</option>
+                      <option value="medium">Medium</option>
+                      <option value="low">Low</option>
+                    </select></label
+                  >
+                  <label class="filter-control"
+                    ><span>Sort</span
+                    ><select id="sort-tasks">
+                      <option value="created-desc">Newest</option>
+                      <option value="created-asc">Oldest</option>
+                      <option value="due-asc">Due date</option>
+                      <option value="priority">Priority</option>
+                      <option value="title">Title A–Z</option>
+                    </select></label
+                  >
+                </div>
+              </div>
+
+              <div class="bulk-toolbar">
+                <label class="select-all-label"
+                  ><input type="checkbox" id="select-all-visible" /> Select
+                  visible</label
+                >
+                <div class="bulk-actions">
+                  <span id="selected-count">0 selected</span
+                  ><button
+                    type="button"
+                    class="text-button"
+                    id="bulk-complete-btn"
+                    disabled
+                  >
+                    Complete selected</button
+                  ><button
+                    type="button"
+                    class="text-button danger-text"
+                    id="bulk-delete-btn"
+                    disabled
+                  >
+                    Delete selected
+                  </button>
+                </div>
+              </div>
+
+              <ul class="task-list" id="task-list" aria-live="polite"></ul>
+              <div class="list-footer">
+                <span id="visible-count">Showing 0 tasks</span
+                ><button
+                  type="button"
+                  class="text-button danger-text"
+                  id="clear-completed-btn"
+                >
+                  Clear completed
+                </button>
+              </div>
+            </section>
+
+            <section class="panel today-panel" id="today-section">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">FOCUS FOR TODAY</p>
+                  <h2>Today's tasks</h2>
+                </div>
+                <span class="soft-badge" id="today-badge">0 tasks</span>
+              </div>
+              <div id="today-list" class="today-list"></div>
+            </section>
+          </div>
+
+          <aside class="secondary-column">
+            <section class="panel category-panel" id="analytics-section">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">AT A GLANCE</p>
+                  <h2>By category</h2>
+                </div>
+              </div>
+              <div id="category-breakdown" class="category-breakdown"></div>
+            </section>
+            <section class="panel priority-panel">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">PLAN SMARTER</p>
+                  <h2>Priority overview</h2>
+                </div>
+              </div>
+              <div class="priority-overview" id="priority-overview"></div>
+            </section>
+            <section class="panel tools-panel">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">YOUR DATA</p>
+                  <h2>Backup &amp; reset</h2>
+                </div>
+              </div>
+              <p class="muted small">
+                Your tasks are stored in this browser. Export a backup before
+                changing devices or clearing browser data.
+              </p>
+              <div class="utility-actions">
+                <button
+                  class="secondary-button full-width"
+                  type="button"
+                  id="import-btn"
+                >
+                  ↑ Import backup</button
+                ><input
+                  type="file"
+                  id="import-file"
+                  accept="application/json,.json"
+                  hidden
+                /><button
+                  class="secondary-button full-width"
+                  type="button"
+                  id="demo-btn"
+                >
+                  Load demo tasks</button
+                ><button
+                  class="secondary-button full-width"
+                  type="button"
+                  id="reset-btn"
+                >
+                  Delete all tasks
+                </button>
+              </div>
+              <p class="storage-note" id="storage-note">
+                Local storage enabled
+              </p>
+            </section>
+            <section class="quote-card">
+              <span>“</span>
+              <p>First, solve the problem. Then, write the code.</p>
+              <small>— John Johnson</small>
+            </section>
+          </aside>
+        </div>
+
+        <footer class="app-footer">
+          <span>DevTrack <b>·</b> Your developer journey, organized.</span
+          ><span>Built with HTML, CSS &amp; JavaScript</span>
+        </footer>
       </main>
     </div>
+    <div
+      class="toast-region"
+      id="toast-region"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+    <dialog class="confirm-dialog" id="confirm-dialog">
+      <form method="dialog">
+        <div class="dialog-icon">!</div>
+        <h2 id="dialog-title">Are you sure?</h2>
+        <p id="dialog-message">This action cannot be undone.</p>
+        <div class="dialog-actions">
+          <button class="secondary-button" value="cancel">Cancel</button
+          ><button
+            class="primary-button danger-button"
+            id="dialog-confirm"
+            value="confirm"
+          >
+            Confirm
+          </button>
+        </div>
+      </form>
+    </dialog>
   </body>
 </html>
